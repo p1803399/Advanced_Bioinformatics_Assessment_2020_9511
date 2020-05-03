@@ -4,6 +4,28 @@ Advanced Bioinformatics 2020 Assessment
 5/2/2020
 
 ``` r
+ knitr::include_graphics
+```
+
+    ## function (path, auto_pdf = getOption("knitr.graphics.auto_pdf", 
+    ##     FALSE), dpi = NULL, error = TRUE) 
+    ## {
+    ##     path = native_encode(path)
+    ##     if (auto_pdf && is_latex_output()) {
+    ##         path2 = with_ext(path, "pdf")
+    ##         i = file.exists(path2)
+    ##         path[i] = path2[i]
+    ##     }
+    ##     if (error && length(p <- path[!is_web_path(path) & !file.exists(path)])) 
+    ##         stop("Cannot find the file(s): ", paste0("\"", p, "\"", 
+    ##             collapse = "; "))
+    ##     structure(path, class = c("knit_image_paths", "knit_asis"), 
+    ##         dpi = dpi)
+    ## }
+    ## <bytecode: 0x7fe89ce7cee0>
+    ## <environment: namespace:knitr>
+
+``` r
 library("ggplot2")
 ```
 
@@ -84,7 +106,7 @@ Task 3.4
 ggplot(data=mtcars,aes(x=as.factor(gear),y=mpg)) + geom_boxplot(aes(col=as.factor(gear)))
 ```
 
-![](Advanced-Bioinformatics-2020-Assessment_files/figure-markdown_github/unnamed-chunk-7-1.png)
+![](Advanced-Bioinformatics-2020-Assessment_files/figure-markdown_github/unnamed-chunk-8-1.png)
 
 Task 3.5
 ========
@@ -154,7 +176,7 @@ Task 3.6
 ggplot(cars,aes(speed,dist)) + geom_point() + geom_smooth(method="lm",formula="y~x")
 ```
 
-![](Advanced-Bioinformatics-2020-Assessment_files/figure-markdown_github/unnamed-chunk-11-1.png)
+![](Advanced-Bioinformatics-2020-Assessment_files/figure-markdown_github/unnamed-chunk-12-1.png)
 
 Task 3.7
 ========
@@ -204,4 +226,4 @@ averagereactiontime
 ggplot(cars,aes(x,y)) + geom_point() + geom_smooth(method="lm",formula="y~x") + labs(y= "reaction time", x = "dist/speed^2")
 ```
 
-![](Advanced-Bioinformatics-2020-Assessment_files/figure-markdown_github/unnamed-chunk-14-1.png)
+![](Advanced-Bioinformatics-2020-Assessment_files/figure-markdown_github/unnamed-chunk-15-1.png)
