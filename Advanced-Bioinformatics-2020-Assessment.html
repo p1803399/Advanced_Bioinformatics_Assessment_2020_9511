@@ -184,6 +184,24 @@ summary {
 </div>
 
 
+<pre class="r"><code> knitr::include_graphics</code></pre>
+<pre><code>## function (path, auto_pdf = getOption(&quot;knitr.graphics.auto_pdf&quot;, 
+##     FALSE), dpi = NULL, error = TRUE) 
+## {
+##     path = native_encode(path)
+##     if (auto_pdf &amp;&amp; is_latex_output()) {
+##         path2 = with_ext(path, &quot;pdf&quot;)
+##         i = file.exists(path2)
+##         path[i] = path2[i]
+##     }
+##     if (error &amp;&amp; length(p &lt;- path[!is_web_path(path) &amp; !file.exists(path)])) 
+##         stop(&quot;Cannot find the file(s): &quot;, paste0(&quot;\&quot;&quot;, p, &quot;\&quot;&quot;, 
+##             collapse = &quot;; &quot;))
+##     structure(path, class = c(&quot;knit_image_paths&quot;, &quot;knit_asis&quot;), 
+##         dpi = dpi)
+## }
+## &lt;bytecode: 0x7f92f333a578&gt;
+## &lt;environment: namespace:knitr&gt;</code></pre>
 <pre class="r"><code>library(&quot;ggplot2&quot;)</code></pre>
 <div id="task-3.1" class="section level1">
 <h1>Task 3.1</h1>
