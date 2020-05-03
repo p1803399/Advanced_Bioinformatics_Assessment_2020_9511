@@ -105,7 +105,7 @@ knitr::include_graphics
     ##     structure(path, class = c("knit_image_paths", "knit_asis"), 
     ##         dpi = dpi)
     ## }
-    ## <bytecode: 0x7fc6f51a9c38>
+    ## <bytecode: 0x7fa31fa97a08>
     ## <environment: namespace:knitr>
 
 Task 3.5
@@ -197,7 +197,7 @@ knitr::include_graphics
     ##     structure(path, class = c("knit_image_paths", "knit_asis"), 
     ##         dpi = dpi)
     ## }
-    ## <bytecode: 0x7fc6f51a9c38>
+    ## <bytecode: 0x7fa31fa97a08>
     ## <environment: namespace:knitr>
 
 Task 3.7
@@ -269,5 +269,5 @@ knitr::include_graphics
     ##     structure(path, class = c("knit_image_paths", "knit_asis"), 
     ##         dpi = dpi)
     ## }
-    ## <bytecode: 0x7fc6f51a9c38>
+    ## <bytecode: 0x7fa31fa97a08>
     ## <environment: namespace:knitr>
