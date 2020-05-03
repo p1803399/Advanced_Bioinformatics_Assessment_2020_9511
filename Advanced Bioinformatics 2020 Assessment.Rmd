@@ -3,7 +3,7 @@ title: "Advanced Bioinformatics 2020 Assessment"
 author: '9511'
 date: "5/2/2020"
 output:
-  github_document
+  html_document
 ---
 
 ```{r}
